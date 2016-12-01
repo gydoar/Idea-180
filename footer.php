@@ -82,9 +82,6 @@
 <!-- End of Async HubSpot Analytics Code -->
 
 
-<?php if (!is_home()){ ?>
-
-
 	<script>(function() {
 	var _fbq = window._fbq || (window._fbq = []);
 	if (!_fbq.loaded) {
@@ -113,7 +110,6 @@
 	})(window,document,'script','dataLayer','GTM-MXMV3W');</script>
 	<!-- End Google Tag Manager -->
 
-<?php } ?>
 
 <?php if(is_page('services')){ ?>
 <!-- Efectos scroll menu -->

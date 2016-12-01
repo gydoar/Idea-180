@@ -18,11 +18,12 @@
 </title>
 <meta name="description" content="<?php bloginfo('description' ); ?>">
 
-<link rel="alternate" href="http://www.idea180.com" hreflang="en" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png" type="image/png" />
 <?php wp_head(); //leave for plugins ?>
 
+</head>
+<body>
   <header>
   <div class="wrapper">
     	<div class="logo"><a href="<?php echo get_option('home'); ?>" class="mlprx" data-effect="animated fadeInLeft" data-delay="300"><?php bloginfo('name'); ?></a></div>

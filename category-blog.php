@@ -31,12 +31,12 @@
 <div class="listablog">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $loopcounter++; ?> 
 <article class="listablogpost">
-<div class="imgpost"><a href="<?php the_permalink() ?>"  title="<?php the_title(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a></div>
+<div class="imgpost"><a href="<?php the_permalink() ?>"  title="<?php the_title(); ?>"><?php the_post_thumbnail( 'category-blog' ); ?></a></div>
 <div class="fechapost"><?php the_time('l, j F, Y') ?></div>
-<h2 class="titlebloghome"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+<h2 class="titlebloghome"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php if (strlen($post->post_title) > 40) { echo substr(the_title($before = '', $after = '', FALSE), 0, 40) . '...'; } else { the_title(); } ?></a></h2>
 <div class="autorpost">By: <strong><?php the_field('authorpost'); ?></strong></div>
 <div style="clear:both"></div>
-<div class="descrippost"><?php the_excerpt(); ?></div>
+<div class="descrippost"><?php excerpt('40'); ?></div>
 <span class="queflipas2"><a href="<?php the_permalink() ?>" class="readmoreblog2"  title="<?php the_title(); ?>">Read More</a></span></article>
 <?php endwhile; endif; ?>
 </div>

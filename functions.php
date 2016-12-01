@@ -119,6 +119,7 @@ Custom imagen size ANDRES
 
 add_image_size( 'posts-relacionados', 155, 110, true);
 add_image_size( 'out-work', 300, 350, true);
+add_image_size( 'category-blog', 280, 166, true);
 
 /*
 Creamos la funcion para procesar la páginación ANDRES
@@ -143,4 +144,32 @@ function wp_corenavi() {
 }
 
 
+
+/*********************
+RANDOM CLEANUP ITEMS
+*********************/
+
+// remove the p from around imgs (http://css-tricks.com/snippets/wordpress/remove-paragraph-tags-from-around-images/)
+function bones_filter_ptags_on_images($content){
+    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+
+function excerpt($num) {
+    $limit = $num+1;
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt)."...";
+    echo $excerpt;
+}
+
+
+function footer_enqueue_scripts() {
+ remove_action('wp_head', 'wp_print_scripts');
+ remove_action('wp_head', 'wp_print_head_scripts', 9);
+ remove_action('wp_head', 'wp_enqueue_scripts', 1);
+ add_action('wp_footer', 'wp_print_scripts', 5);
+ add_action('wp_footer', 'wp_enqueue_scripts', 5);
+ add_action('wp_footer', 'wp_print_head_scripts', 5);
+}
+add_action('after_setup_theme', 'footer_enqueue_scripts');
 ?>

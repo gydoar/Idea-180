@@ -3,7 +3,7 @@
 Template Name: Thanks
 */
 ?>
-<?php get_header('home'); ?>
+<?php get_header(); ?>
 </div>
 <section class="insidemarging insidequick">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
