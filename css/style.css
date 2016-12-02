@@ -408,9 +408,28 @@ span.pages, span.page-numbers.current, a.page-numbers:hover{
 .youtube__header{
 	margin-top: 20px;
 }
-
-
-
+.cycle-slideshow.composite-example{
+	font-family: "Oswald",sans-serif;
+	background-image: url(../images/fondo03.jpg) !important;
+	background-repeat: no-repeat;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-moz-background-size: 100%;
+	-ms-background-size: 100%;
+	background-size: cover;
+	min-height: 100px;
+}
+.wrapper_100{
+	width: 100%;
+	max-width: 100%
+}
+.cycle-slideshow .cycle-carousel-wrap .cycle-slide .testimonial-box .box-content p{
+	margin: 20px auto !important;
+}
 /* Se implementan las media queries ANDRES
 /*------------------------------------*\
     $MEDIA-QUERIES

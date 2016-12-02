@@ -1,5 +1,6 @@
 
 <?php 
+
     /*********************
 Cargamos archivo CSS y JS ANDRES
 *********************/
@@ -21,7 +22,7 @@ function bones_scripts_and_styles() {
         
 
         //adding scripts file in the footer
-        wp_register_script( 'js-meanmenu', get_stylesheet_directory_uri() . '/js/jquery.meanmenu.js', array( 'jquery' ), '', true );
+        wp_register_script( 'js-meanmenu', get_stylesheet_directory_uri() . '/js/jquery.meanmenu.js', array( 'jquery' ), '', true);
 
 
         wp_enqueue_style( 'style' );
@@ -34,7 +35,7 @@ function bones_scripts_and_styles() {
         using the google cdn. That way it stays cached
         and your site will load faster.
         */
-        wp_enqueue_script( 'jquery' );
+        //wp_enqueue_script( 'jquery' );
         wp_enqueue_script( 'js-ajax' );
         wp_enqueue_script( 'js-meanmenu' );
 
@@ -161,5 +162,14 @@ function excerpt($num) {
     $excerpt = implode(" ",$excerpt)."...";
     echo $excerpt;
 }
+
+remove_action( 'wp_head', 'dns-prefetch' );
+remove_action( 'wp_head', 'wp_resource_hints', 2 );
+add_filter( 'emoji_svg_url', '__return_false' );
+
+// Remove emoji script
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 
 ?>

@@ -12,9 +12,4 @@
 <?php endwhile; endif; ?>    
     </section>
 <div class="wrapper">
-<script type="text/javascript">
-jQuery( document ).ready( function( $ ) {
-$( '.listapeople' ).masonry({ isFitWidth: true });
-} );
-</script>
 <?php get_footer(); ?>    

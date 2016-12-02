@@ -79,6 +79,17 @@
 
 <!-- slider -->
 
+<div class="testimonial">
+  <div class="wrapper_100">
+    <?php echo do_shortcode( '[gs_testimonial transition="carousel" theme="gs_style1" img="gs_square_shadow"]' ); ?>
+  </div>
+</div>
+
+
+
+
+
+
 <div class="wrapper">
 <section class="callshome3">
 <h3 class="tituourwork mlprx" data-effect="animated fadeInLeft" data-delay="500">Some of our Latest Designs</h3>

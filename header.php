@@ -20,7 +20,7 @@
 
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png" type="image/png" />
-<?php wp_head(); //leave for plugins ?>
+<?php wp_head(); //leave for plugins ?> 
 
 </head>
 <body>
