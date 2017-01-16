@@ -308,12 +308,14 @@ opacity:0;
 	margin-left: 0px;
 	padding-right: 0px;
 	padding-left: 0px;
+	margin-bottom: 33px;
 }
 .callshome4 .widget, .callshome4b .widget{
 	vertical-align: top;
 	display: inline-table;
 	margin-right: 20px;
 	margin-left: 20px;
+	margin-top: -30px !important;
 }
 .callshome4 .widgettitle, .callshome4b .widgettitle{
 	display: none;
@@ -430,6 +432,15 @@ span.pages, span.page-numbers.current, a.page-numbers:hover{
 .cycle-slideshow .cycle-carousel-wrap .cycle-slide .testimonial-box .box-content p{
 	margin: 20px auto !important;
 }
+.cetificacion .callshome4{
+	display: inline-block;
+	vertical-align: middle;
+
+}
+p.simple-image{
+	margin-top: -17px! !important;
+}
+
 /* Se implementan las media queries ANDRES
 /*------------------------------------*\
     $MEDIA-QUERIES

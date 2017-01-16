@@ -35,7 +35,7 @@
 		
 		<p class="credito"> Don't plagiarize our web design, it's bad karma! ©<?php echo date("Y"); ?> Idea180</p>
 
-		<a href="http://www.dmca.com/Protection/Status.aspx?ID=e07c093a-7629-4cc9-9c27-b6f3e1dc0a02" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="//images.dmca.com/Badges/dmca_protected_sml_120al.png?ID=e07c093a-7629-4cc9-9c27-b6f3e1dc0a02"  alt="DMCA.com Protection Status" /></a>  <script src="https://streamtest.github.io/badges/streamtest.js" type="text/javascript"></script> 
+		<a href="http://www.dmca.com/Protection/Status.aspx?ID=e07c093a-7629-4cc9-9c27-b6f3e1dc0a02" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="<?php bloginfo('stylesheet_directory' ); ?>/images/dmca_protected_sml_120al.png?ID=e07c093a-7629-4cc9-9c27-b6f3e1dc0a02"  alt="DMCA.com Protection Status" /></a>
 
 
 	 <?php wp_footer(); //leave for plugins ?>

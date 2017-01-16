@@ -5,7 +5,11 @@
 <div class="slider__header center">
 
   <div class="youtube__header">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_SL-CqLFaqk?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+  <script src="//fast.wistia.com/embed/medias/pes9pzvfw2.jsonp" async></script>
+  <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+  <span class="wistia_embed wistia_async_pes9pzvfw2 popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:315px;width:560px">&nbsp;</span>
+
   </div>
 
   <h2>INTERNET MARKETING <span>&middot;</span> WEB DESIGN</h2>
@@ -176,20 +180,27 @@ while ($featuredPosts->have_posts()) : $featuredPosts->the_post(); ?>
 
 </div>
 <div style="clear:both;"></div>
-<section class="ml-parallax-bg callshome4 fondoclientes slider04b">
-<h3 class="tituourwork mlprx" data-effect="animated fadeInLeft" data-delay="500">Our Clients</h3>
 
-<?php	/* Widgetized sidebar */ if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(10) ) : ?>    						
-			<?php endif; /* End of widgetized sidebar */ ?>
+<div class="cetificacion">
+    <section class="ml-parallax-bg callshome4 fondoclientes slider04b">
+    <h3 class="tituourwork mlprx" data-effect="animated fadeInLeft" data-delay="500">Our Clients</h3>
 
-</section>
+    <?php	/* Widgetized sidebar */ if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(10) ) : ?>    						
+    			<?php endif; /* End of widgetized sidebar */ ?>
 
-<section class="callshome4b">
-<h3 class="tituourwork mlprx" data-effect="animated fadeInLeft" data-delay="500">Certifications</h3>
-<?php	/* Widgetized sidebar */ if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(11) ) : ?>    						
-			<?php endif; /* End of widgetized sidebar */ ?>
 
-</section>
+    </section>
+
+    <section class="callshome4b">
+    <h3 class="tituourwork mlprx" data-effect="animated fadeInLeft" data-delay="500">Certifications</h3>
+    <?php	/* Widgetized sidebar */ if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(11) ) : ?>    						
+    			<?php endif; /* End of widgetized sidebar */ ?>
+
+          <script src="https://apis.google.com/js/platform.js"></script>
+    <div class="g-partnersbadge" data-agency-id="1244934539"></div>
+
+    </section>
+</div>
 
 <section class="ml-parallax-bg slider04">
 <div class="wrapper">
